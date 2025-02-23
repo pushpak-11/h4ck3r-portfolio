@@ -6,7 +6,6 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 const App: React.FC = () => {
-  // ✅ useState is now inside the function component
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +28,7 @@ const App: React.FC = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        (response) => {
+        (_response) => {  // Updated variable
           Swal.fire({
             icon: "success",
             title: "Message Sent!",
@@ -43,7 +42,7 @@ const App: React.FC = () => {
 
           setFormData({ name: "", email: "", subject: "", message: "" }); // Clear form after submission
         },
-        (error) => {
+        (_error) => {  // Updated variable
           Swal.fire({
             icon: "error",
             title: "Message Failed!",
@@ -57,7 +56,7 @@ const App: React.FC = () => {
         }
       );
   };
-  
+
   return (
     <>
       <Nav />
