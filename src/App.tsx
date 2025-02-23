@@ -372,7 +372,7 @@ const App: React.FC = () => {
               </svg>
               <blockquote className="transform transition-all duration-300 hover:scale-125">
               <p className="text-2xl font-medium py-8 text-gray-900 dark:text-white">
-                "Working with HAK3R transformed our security posture completely. Their methodical approach to penetration testing uncovered critical vulnerabilities that our internal team had missed for months. What sets them apart isn't just their technical expertise, but their ability to communicate complex security concepts in a way that resonates with us."
+                "Working with Pushpak transformed our security posture completely. Their methodical approach to penetration testing uncovered critical vulnerabilities that our internal team had missed for months. What sets them apart isn't just their technical expertise, but their ability to communicate complex security concepts in a way that resonates with us."
               </p>
             </blockquote>
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
