@@ -1,3 +1,7 @@
+import { useState, useEffect } from "react";
+import { Navbar, DarkThemeToggle } from "flowbite-react";
+import { FaGithub, FaInstagram, FaXTwitter, FaLinkedin, FaMedium } from "react-icons/fa";
+
 const Nav: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
