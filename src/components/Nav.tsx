@@ -1,8 +1,3 @@
-import React, { useState, useEffect } from "react";
-import { Navbar } from "flowbite-react";
-import { DarkThemeToggle } from "flowbite-react";
-import { FaGithub, FaInstagram, FaXTwitter, FaLinkedin, FaMedium } from "react-icons/fa6";
-
 const Nav: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,6 +26,14 @@ const Nav: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // **Fix: Add scrollToSection function**
+  const scrollToSection = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Navbar
@@ -87,7 +90,7 @@ const Nav: React.FC = () => {
         </button>
         <Navbar.Toggle />
       </div>
-        <Navbar.Collapse>
+      <Navbar.Collapse>
         {['home', 'services', 'about', 'contact'].map((section) => (
           <button 
             key={section}
