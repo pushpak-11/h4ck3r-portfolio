@@ -326,6 +326,93 @@ const App: React.FC = () => {
             </div>
         </section>
 
+        {/* #### SERVICES SECTION #### */}
+          <section id="about" className="bg-white dark:bg-black pt-8">
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
+            <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                About Me, HAK3R
+              </h2>
+              <p className="mb-4 text-3xl">
+              I've dedicated my career to finding the vulnerabilities that others miss. My journey began with CTF competitions and evolved into a full-time commitment to making digital spaces more secure.
+              </p>
+              <p className="text-xl">
+             My approach combines creative problem-solving with rigorous methodology, ensuring no stone is left unturned in the pursuit of robust security.
+              </p>
+              <a href="#" className="inline-flex mt-8 items-center justify-center px-5 py-4 text-base font-medium text:3xl text-center text-gray-900 border-4 border-green-300  hover:bg-green-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-gray-800"
+          >
+            Download C.V.
+          </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+            <img
+              className="w-full transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
+              src="./assets/images/office-long-2.png"
+              alt="office content 1"
+            />
+            <img
+              className="mt-4 w-full lg:mt-10 transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
+              src="./assets/images/office-long-1.png"
+              alt="office content 2"
+            />
+          </div>
+          </div>
+          <div className="max-w-screen-xl px-4 pb-8 mx-auto text-center lg:pb-16 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
+              <svg
+                className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                viewBox="0 0 24 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <blockquote className="transform transition-all duration-300 hover:scale-125">
+              <p className="text-2xl font-medium py-8 text-gray-900 dark:text-white">
+                "Working with HAK3R transformed our security posture completely. Their methodical approach to penetration testing uncovered critical vulnerabilities that our internal team had missed for months. What sets them apart isn't just their technical expertise, but their ability to communicate complex security concepts in a way that resonates with us."
+              </p>
+            </blockquote>
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
+              <img
+                className="w-6 h-6 rounded-full transition-opacity duration-300 hover:opacity-70"
+                src="./assets/images/michael-gouch.png"
+                alt="profile picture"
+              />
+                <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                    John Doe
+                  </div>
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                    CEO at Google
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="contact" className="bg-white dark:bg-black">
+          <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img
+              className="w-full transition-opacity duration-300 hover:opacity-70"
+              src="./assets/images/data.png"
+              alt="dashboard image"
+            />
+            <div className="mt-4 md:mt-0">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+              Ready to Strengthen Your Security Posture?
+              </h2>
+              <p className="mb-6 font-light text-gray-500 text-xl lg:text-2xl dark:text-gray-400">
+              Let's connect and discuss how I can help identify vulnerabilities in your systems before malicious actors do.
+              </p>
+              <p className="mb-6 font-light text-gray-500 text-xl lg:text-2xl dark:text-gray-400">Whether you need penetration testing, security consultation, or vulnerability assessments, I'm here to provide expert guidance that fits your organization's unique needs. 
+              </p>
+            </div>
+          </div>
+        </section>
+
      {/* #### CONTACT SECTION #### */}
      <section className="bg-white dark:bg-black transition-all duration-300 hover:scale-105">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
