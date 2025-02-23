@@ -58,7 +58,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
+ <>
       <Nav />
       <main id="home" className="w-full">
        {/* Floating light elements contained within the hero section */} 
@@ -412,3 +412,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
